@@ -1,225 +1,178 @@
-:root {
-  --maroon: #800000;
-  --maroon-soft: rgba(128, 0, 0, 0.08);
-  --text: #1f1f1f;
-  --muted-text: #555;
-  --paper: #fbf7ef;
-  --paper-dark: #efe4d2;
-  --white: #ffffff;
-  --border: rgba(128, 0, 0, 0.22);
-  --shadow: 0 18px 45px rgba(0, 0, 0, 0.10);
-}
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Het huis van ijs en tabak — Familiechroniek Nienhuys</title>
+  <meta name="description" content="Een privé-familiekroniek over Jacobus Nienhuys, Deli, Medan en Herengracht 380–382.">
 
-* {
-  box-sizing: border-box;
-}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 
-body {
-  margin: 0;
-  font-family: "Mulish", Arial, sans-serif;
-  line-height: 1.8;
-  color: var(--text);
-  background: var(--paper);
-}
+  <link rel="stylesheet" href="style.css">
+</head>
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="eyebrow">Familiechroniek</p>
+      <h1>Het huis van ijs en tabak</h1>
+      <p class="subtitle">De familie Nienhuys, Deli en Herengracht 380–382</p>
+    </div>
+  </header>
 
-.site-header {
-  background:
-    linear-gradient(rgba(128, 0, 0, 0.78), rgba(128, 0, 0, 0.72)),
-    radial-gradient(circle at top left, rgba(255,255,255,0.35), transparent 35%),
-    var(--maroon);
-  color: var(--white);
-  padding: 72px 20px;
-  text-align: center;
-}
+  <main>
+    <section class="hero section">
+      <div class="container two-column">
+        <div>
+          <h2>Een privé-project voor de familie</h2>
+          <p>
+            Dit project verzamelt tekst, beeld, bronnen en herinneringen rond Jacobus Nienhuys,
+            de Deli-tabak, Medan en het Amsterdamse stadspaleis aan de Herengracht 380–382.
+          </p>
+          <p>
+            Het verhaal is nadrukkelijk geen heldenverhaal zonder schaduw. Het combineert
+            familiegeschiedenis, koloniale geschiedenis, publieke herinnering en bronkritiek.
+          </p>
+        </div>
 
-.header-inner {
-  max-width: 980px;
-  margin: 0 auto;
-}
+        <figure class="cover-card">
+          <img src="assets/cover.jpg" alt="Voorpagina van Het huis van ijs en tabak">
+          <figcaption>Voorlopige omslag van het familieproject.</figcaption>
+        </figure>
+      </div>
+    </section>
 
-.eyebrow {
-  margin: 0 0 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  font-size: 0.82rem;
-  font-weight: 700;
-}
+    <section class="section muted">
+      <div class="container">
+        <h2>Video: Jacobus Nienhuys en het ontstaan van Medan</h2>
+        <p>
+          Onderstaande Indonesische video geeft een populair-historische samenvatting van de rol
+          van Jacobus Nienhuys in Deli en Medan. De video is bruikbaar als hedendaagse herinneringslaag,
+          maar moet bronkritisch worden gelezen.
+        </p>
 
-h1,
-h2,
-h3 {
-  font-family: "Poppins", Arial, sans-serif;
-  line-height: 1.2;
-}
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/KcP3UpUf9IE?si=rLzlqyk_ErWgyn-O"
+            title="YouTube video over Jacobus Nienhuys en Deli"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
 
-h1 {
-  margin: 0;
-  font-size: clamp(2.4rem, 6vw, 5rem);
-}
+        <div class="note">
+          <strong>Bronkritische noot:</strong>
+          de video bevat enkele vermoedelijke transcriptie- en feitelijke fouten. Voor het familieboek
+          gebruiken we de video niet als primaire historische bron, maar als voorbeeld van hedendaagse
+          Indonesische beeldvorming rond Nienhuys, Deli en Medan.
+        </div>
+      </div>
+    </section>
 
-.subtitle {
-  margin: 18px auto 0;
-  max-width: 760px;
-  font-size: clamp(1.05rem, 2vw, 1.35rem);
-}
+    <section class="section">
+      <div class="container">
+        <h2>Hoofdlijn van het verhaal</h2>
 
-.section {
-  padding: 64px 20px;
-}
+        <div class="timeline">
+          <article>
+            <span>1863</span>
+            <h3>Aankomst in Deli</h3>
+            <p>
+              Jacobus Nienhuys arriveert aan de oostkust van Sumatra en ziet kansen voor tabaksteelt.
+            </p>
+          </article>
 
-.muted {
-  background: var(--paper-dark);
-}
+          <article>
+            <span>1869</span>
+            <h3>Deli Maatschappij</h3>
+            <p>
+              De Deli Maatschappij wordt opgericht en groeit uit tot een machtige onderneming in de tabakscultuur.
+            </p>
+          </article>
 
-.container {
-  max-width: 1080px;
-  margin: 0 auto;
-}
+          <article>
+            <span>1888–1890</span>
+            <h3>Herengracht 380–382</h3>
+            <p>
+              In Amsterdam verrijst het stadspaleis van Nienhuys, ontworpen door Abraham Salm.
+            </p>
+          </article>
 
-.two-column {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 42px;
-  align-items: start;
-}
+          <article>
+            <span>1914–1938</span>
+            <h3>Monument en herinnering</h3>
+            <p>
+              In Medan wordt Nienhuys herdacht als pionier, maar latere bronnen tonen ook de schaduwzijde.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-.cover-card {
-  margin: 0;
-  padding: 14px;
-  background: var(--white);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
-}
+    <section class="section muted">
+      <div class="container">
+        <h2>Drie lagen</h2>
 
-.cover-card img {
-  border: 1px solid rgba(0, 0, 0, 0.08);
-}
+        <div class="cards">
+          <article class="card">
+            <h3>Familie</h3>
+            <p>
+              De lijn Nienhuys loopt door in de familie Noë. Dit onderdeel krijgt een persoonlijke,
+              niet-publieke toon.
+            </p>
+          </article>
 
-figcaption {
-  margin-top: 10px;
-  color: var(--muted-text);
-  font-size: 0.92rem;
-}
+          <article class="card">
+            <h3>Geschiedenis</h3>
+            <p>
+              Deli, tabak, Medan, arbeid, contractkoelies, de Deli Maatschappij en de koloniale economie.
+            </p>
+          </article>
 
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%;
-  margin: 28px 0;
-  background: #000;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
-}
+          <article class="card">
+            <h3>Bronkritiek</h3>
+            <p>
+              Oude kranten zijn waardevol, maar vaak gekleurd door koloniale zelfrechtvaardiging.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-.video-wrapper iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
+    <section class="section">
+      <div class="container">
+        <h2>Werknotities</h2>
 
-.note {
-  padding: 18px 20px;
-  background: var(--maroon-soft);
-  border-left: 5px solid var(--maroon);
-}
+        <button class="accordion-button" type="button" aria-expanded="false">
+          Toon bronkritische aandachtspunten
+        </button>
 
-.timeline {
-  display: grid;
-  gap: 20px;
-}
+        <div class="accordion-panel">
+          <ul>
+            <li>Verwar herdenkingsartikelen niet met neutrale geschiedschrijving.</li>
+            <li>Gebruik de term “koelie” alleen historisch-kritisch en bij voorkeur met uitleg.</li>
+            <li>Claims over mishandeling of verdrijving moeten als claim worden gemarkeerd tenzij er primaire bronnen zijn.</li>
+            <li>Herengracht correct aanduiden als Herengracht 380–382.</li>
+            <li>De YouTube-video gebruiken als hedendaagse herinneringsbron, niet als primaire bron.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
 
-.timeline article {
-  padding: 22px;
-  background: var(--white);
-  border: 1px solid var(--border);
-}
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        Privé-familieproject — Anton Noë.
+        Niet bedoeld als afgeronde academische publicatie.
+      </p>
+    </div>
+  </footer>
 
-.timeline span {
-  display: inline-block;
-  margin-bottom: 8px;
-  color: var(--maroon);
-  font-weight: 800;
-  letter-spacing: 0.05em;
-}
-
-.timeline h3 {
-  margin: 0 0 8px;
-}
-
-.timeline p {
-  margin: 0;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-}
-
-.card {
-  padding: 24px;
-  background: var(--white);
-  border: 1px solid var(--border);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-}
-
-.card h3 {
-  margin-top: 0;
-  color: var(--maroon);
-}
-
-.accordion-button {
-  width: 100%;
-  padding: 18px 20px;
-  font-family: "Poppins", Arial, sans-serif;
-  font-size: 1rem;
-  text-align: left;
-  color: var(--white);
-  background: var(--maroon);
-  border: none;
-  cursor: pointer;
-}
-
-.accordion-panel {
-  display: none;
-  padding: 20px;
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-top: none;
-}
-
-.accordion-panel.is-open {
-  display: block;
-}
-
-.site-footer {
-  padding: 32px 20px;
-  color: var(--white);
-  background: #2b1b1b;
-}
-
-.site-footer p {
-  margin: 0;
-}
-
-@media (max-width: 820px) {
-  .two-column,
-  .cards {
-    grid-template-columns: 1fr;
-  }
-
-  .section {
-    padding: 44px 18px;
-  }
-
-  .site-header {
-    padding: 56px 18px;
-  }
-}
+  <script src="script.js"></script>
+</body>
+</html>
