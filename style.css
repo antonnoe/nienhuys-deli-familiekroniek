@@ -101,6 +101,22 @@ h1 {
   border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
+.cover-placeholder {
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  border: 1px dashed var(--border);
+  color: var(--muted-text);
+  background: var(--paper);
+  text-align: center;
+}
+
+.cover-placeholder[hidden] {
+  display: none;
+}
+
 figcaption {
   margin-top: 10px;
   color: var(--muted-text);
