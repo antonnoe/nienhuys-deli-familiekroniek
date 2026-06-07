@@ -1,16 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const button = document.querySelector(".accordion-button");
-  const panel = document.querySelector(".accordion-panel");
+document.addEventListener("DOMContentLoaded", () => {
+  const cover = document.querySelector(".cover-image");
+  const fallback = document.querySelector(".cover-fallback");
 
-  if (!button || !panel) {
+  if (!cover || !fallback) {
     return;
   }
 
-  button.addEventListener("click", function () {
-    const isOpen = panel.classList.toggle("is-open");
-    button.setAttribute("aria-expanded", String(isOpen));
-    button.textContent = isOpen
-      ? "Verberg bronkritische aandachtspunten"
-      : "Toon bronkritische aandachtspunten";
+  cover.addEventListener("error", () => {
+    cover.hidden = true;
+    fallback.hidden = false;
   });
 });

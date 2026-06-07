@@ -3,177 +3,262 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#800000">
   <title>Het huis van ijs en tabak — Familiechroniek Nienhuys</title>
-  <meta name="description" content="Een privé-familiekroniek over Jacobus Nienhuys, Deli, Medan en Herengracht 380–382.">
+  <meta name="description" content="Een privé-familiekroniek over Jacobus Nienhuys, Deli, Medan, Amsterdam en de schaduwzijde van koloniale ondernemingsgeschiedenis.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <p class="eyebrow">Familiechroniek</p>
-      <h1>Het huis van ijs en tabak</h1>
-      <p class="subtitle">De familie Nienhuys, Deli en Herengracht 380–382</p>
+  <a class="skip-link" href="#verhaal">Ga direct naar het verhaal</a>
+
+  <header class="hero" id="begin">
+    <div class="hero__image" aria-hidden="true"></div>
+    <div class="hero__wash" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow">Privéproject voor de familie Noë / Nienhuys</p>
+        <h1>Het huis van<br><span>ijs en tabak</span></h1>
+        <p class="hero__subtitle">De familie Nienhuys, Deli en Herengracht 380–382</p>
+        <p class="hero__intro">Een privé-familiekroniek over Jacobus Nienhuys, Deli, Medan, Amsterdam en de schaduwzijde van koloniale ondernemingsgeschiedenis.</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#verhaal">Lees het verhaal</a>
+          <a class="button button--ghost" href="#bronnen">Bekijk bronnen</a>
+        </div>
+      </div>
+
+      <figure class="cover-frame">
+        <img class="cover-image" src="assets/cover.jpg" alt="Omslagbeeld van de familiechroniek Het huis van ijs en tabak">
+        <div class="cover-fallback" role="img" aria-label="Omslagbeeld niet beschikbaar" hidden>
+          <span>Familiechroniek</span>
+          <strong>Het huis van ijs en tabak</strong>
+        </div>
+        <figcaption>Een familieverhaal tussen Deli en Amsterdam</figcaption>
+      </figure>
     </div>
   </header>
 
-  <main>
-    <section class="hero section">
-      <div class="container two-column">
-        <div>
-          <h2>Een privé-project voor de familie</h2>
-          <p>
-            Dit project verzamelt tekst, beeld, bronnen en herinneringen rond Jacobus Nienhuys,
-            de Deli-tabak, Medan en het Amsterdamse stadspaleis aan de Herengracht 380–382.
-          </p>
-          <p>
-            Het verhaal is nadrukkelijk geen heldenverhaal zonder schaduw. Het combineert
-            familiegeschiedenis, koloniale geschiedenis, publieke herinnering en bronkritiek.
-          </p>
+  <nav class="site-nav" aria-label="Hoofdnavigatie">
+    <div class="nav-scroll">
+      <a href="#begin">Begin</a>
+      <a href="#jacobus">Jacobus</a>
+      <a href="#deli">Deli</a>
+      <a href="#maatschappij">Maatschappij</a>
+      <a href="#schaduwzijde">Schaduwzijde</a>
+      <a href="#medan">Medan</a>
+      <a href="#herengracht">Herengracht</a>
+      <a href="#familie">Familie</a>
+      <a href="#bronnen">Bronnen</a>
+    </div>
+  </nav>
+
+  <main id="verhaal">
+    <section class="section section--opening" aria-labelledby="waarom-title">
+      <div class="container container--narrow">
+        <p class="kicker">Verleden, verwantschap en herinnering</p>
+        <h2 id="waarom-title">Waarom dit verhaal?</h2>
+        <p class="lead">Dit project is geen poging om Jacobus Nienhuys eenvoudigweg te eren of te veroordelen. Het is een familiegeschiedenis met meerdere lagen: ondernemerschap, koloniale expansie, rijkdom, arbeid, geweld, herinnering en verwantschap. Sommige bronnen spreken in bewondering over de pionier van Deli. Andere stemmen wijzen juist op de prijs die arbeiders en lokale gemeenschappen betaalden. Juist die spanning maakt het verhaal belangrijk.</p>
+        <aside class="note-box" aria-label="Noot over de status van dit project">
+          <span class="note-box__label">Noot bij dit project</span>
+          <p>Dit is een privéproject in ontwikkeling. Feiten, familiegegevens en beeldmateriaal worden waar mogelijk gekoppeld aan controleerbare bronnen. Onzekere of betwiste claims worden als zodanig gemarkeerd.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="jacobus" aria-labelledby="jacobus-title">
+      <div class="container split-layout">
+        <div class="section-heading">
+          <p class="section-number">01</p>
+          <p class="kicker">De persoon en het portret</p>
+          <h2 id="jacobus-title">Jacobus Nienhuys</h2>
+          <p>Jacobus Nienhuys werd in de negentiende eeuw bekend als pionier van de Deli-tabak. In Nederlandse koloniale kranten werd hij vaak voorgesteld als een sobere, vasthoudende ondernemer die onder moeilijke omstandigheden een nieuwe cultuur tot ontwikkeling bracht. Die voorstelling is historisch belangrijk, maar niet neutraal: zij laat vooral zien hoe Nederland en de Europese gemeenschap in Deli hem wilden herinneren.</p>
         </div>
 
-        <figure class="cover-card">
-          <img
-            src="assets/cover.jpg"
-            alt="Voorpagina van Het huis van ijs en tabak"
-            onerror="this.hidden = true; this.nextElementSibling.hidden = false;">
-          <div class="cover-placeholder" hidden>Plaats hier assets/cover.jpg</div>
-          <figcaption>Voorlopige omslag van het familieproject.</figcaption>
+        <ol class="timeline" aria-label="Tijdlijn van het leven en werk van Jacobus Nienhuys">
+          <li><time datetime="1836">1836</time><span>Geboorte van Jacobus Nienhuys.</span></li>
+          <li><time datetime="1863">1863</time><span>Aankomst aan de oostkust van Sumatra.</span></li>
+          <li><time datetime="1869">1869</time><span>Oprichting van de Deli Maatschappij.</span></li>
+          <li><time>1888–1890</time><span>Bouw van Herengracht 380–382.</span></li>
+          <li><time datetime="1927">1927</time><span>Overlijden in Bloemendaal.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="deli" aria-labelledby="deli-title">
+      <div class="container">
+        <div class="content-grid">
+          <div>
+            <p class="section-number">02</p>
+            <p class="kicker">Een bestaand landschap</p>
+            <h2 id="deli-title">Deli vóór Nienhuys</h2>
+            <p class="lead-small">Deli was geen leeg gebied. Vóór de komst van Europese plantageondernemers bestond er al een Maleis sultanaat, met Labuhan Deli als belangrijk centrum. De komst van Nienhuys moet daarom niet worden gelezen als het begin van Deli, maar als het begin van een nieuwe koloniale plantagefase.</p>
+          </div>
+
+          <aside class="archive-panel" aria-labelledby="landschap-title">
+            <p class="archive-panel__overline">Historische context</p>
+            <h3 id="landschap-title">Van sultanaat naar plantagegebied</h3>
+            <ul class="marker-list">
+              <li>Sultan van Deli</li>
+              <li>Labuhan Deli</li>
+              <li>Handelsroutes</li>
+              <li>Europese concessies</li>
+              <li>Tabaksexperimenten</li>
+            </ul>
+          </aside>
+        </div>
+
+        <div class="arrival-block" aria-labelledby="komst-title">
+          <div>
+            <p class="kicker">1863 · Oostkust van Sumatra</p>
+            <h3 id="komst-title">De komst naar Deli</h3>
+            <p>Volgens latere herinneringsbronnen kwam Nienhuys in 1863 naar Deli na verhalen over de mogelijkheden van tabaksteelt. De eerste verwachtingen bleken overdreven. De regio was geen kant-en-klare tabaksmarkt; de onderneming begon met onzekerheid, verlies en improvisatie. Juist daarin ontstond later de pioniersmythe: de eenling die bleef waar anderen vertrokken.</p>
+          </div>
+          <blockquote>De eerste jaren van Deli waren niet alleen een verhaal van succes, maar ook van misleiding, verlies, conflict en volharding.</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--deep" id="maatschappij" aria-labelledby="maatschappij-title">
+      <div class="container">
+        <div class="section-intro section-intro--light">
+          <p class="section-number">03</p>
+          <p class="kicker">Kapitaal, organisatie en groei</p>
+          <h2 id="maatschappij-title">De tabak en de Deli Maatschappij</h2>
+          <p>De eerste jaren waren onzeker. De beloofde tabaksrijkdom bleek niet direct aanwezig, de eerste ondernemingen leden verlies en financiers trokken zich terug. Toch bleef Nienhuys proberen. Via nieuwe geldschieters, onder wie P.W. Janssen en G.C. Clemen, groeide het initiatief uit tot de Deli Maatschappij, opgericht in 1869. Later werd Jacob Theodoor Cremer een sleutelfiguur in de verdere ontwikkeling.</p>
+        </div>
+
+        <div class="card-grid card-grid--four">
+          <article class="person-card"><span>PJ</span><h3>P.W. Janssen</h3><p>Financier en ondernemer</p></article>
+          <article class="person-card"><span>GC</span><h3>G.C. Clemen</h3><p>Vroege zakenpartner</p></article>
+          <article class="person-card"><span>JC</span><h3>J.T. Cremer</h3><p>Latere organisator en bestuurder</p></article>
+          <article class="person-card"><span>DM</span><h3>Deli Maatschappij</h3><p>Onderneming achter de groei van de tabakscultuur</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--shadow" id="schaduwzijde" aria-labelledby="schaduw-title">
+      <div class="container">
+        <div class="section-intro">
+          <p class="section-number">04</p>
+          <p class="kicker">Wat de heldenverhalen minder vaak vertellen</p>
+          <h2 id="schaduw-title">Arbeid, tucht en schaduwzijde</h2>
+          <p class="lead-small">De Deli-tabak was niet alleen een verhaal van ondernemerschap. De plantages draaiden op contractarbeid, onder meer van Chinese, Javaanse en andere arbeiders. Oude kranten en herdenkingsstukken spreken vaak bewonderend over pionierskracht, maar zeggen veel minder over afhankelijkheid, tucht, geweld en de positie van de arbeiders. Juist deze stilte moet zichtbaar blijven.</p>
+        </div>
+
+        <aside class="warning-box">
+          <strong>Historisch taalgebruik</strong>
+          <p>Het woord “koelie” komt veel voor in historische bronnen. Op deze site wordt het alleen gebruikt als historische term uit koloniale bronnen, niet als neutrale aanduiding.</p>
+        </aside>
+
+        <blockquote class="feature-quote">Het stokslagenverhaal is geen processtuk, maar een herinneringsanekdote. Juist daardoor toont het hoe de koloniale gemeenschap haar eigen geweld kon verzachten: niet als strafrechtelijk probleem, maar als kordate pionierspraktijk.</blockquote>
+
+        <div class="contested">
+          <p class="kicker">Bronkritische kanttekening</p>
+          <h3>Betwiste claims</h3>
+          <p>In latere bronnen en hedendaagse reacties circuleren claims over ernstige mishandeling, dodelijk geweld en een mogelijk gedwongen vertrek van Nienhuys uit Deli. Zulke claims zijn belangrijk voor het morele en historische beeld, maar moeten zorgvuldig worden onderscheiden van formeel bewezen feiten. Waar een processtuk of primaire bron ontbreekt, wordt op deze site gesproken van een claim, herinnering of overlevering.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="medan" aria-labelledby="medan-title">
+      <div class="container">
+        <div class="section-intro">
+          <p class="section-number">05</p>
+          <p class="kicker">Een verdeelde herinnering</p>
+          <h2 id="medan-title">Medan en de herinnering aan Nienhuys</h2>
+          <p class="lead-small">In Medan werd Nienhuys later herdacht als stichtingsfiguur van de plantagewereld. Zijn naam werd verbonden aan een fontein, publieke herdenkingen en verhalen over de groei van Medan. Hedendaagse Indonesische reacties laten zien dat die herinnering verdeeld is: voor sommigen is hij een pionier, voor anderen een symbool van koloniale uitbuiting.</p>
+        </div>
+
+        <figure class="video-figure">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/KcP3UpUf9IE?si=rLzlqyk_ErWgyn-O" title="Indonesische populair-historische video over Jacobus Nienhuys, Deli en Medan" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <figcaption>Indonesische populair-historische video over Nienhuys, Deli en Medan. Gebruikt als hedendaagse herinneringslaag, niet als primaire bron.</figcaption>
         </figure>
-      </div>
-    </section>
 
-    <section class="section muted">
-      <div class="container">
-        <h2>Video: Jacobus Nienhuys en het ontstaan van Medan</h2>
-        <p>
-          Onderstaande Indonesische video geeft een populair-historische samenvatting van de rol
-          van Jacobus Nienhuys in Deli en Medan. De video is bruikbaar als hedendaagse herinneringslaag,
-          maar moet bronkritisch worden gelezen.
-        </p>
-
-        <div class="video-wrapper">
-          <iframe
-            src="https://www.youtube.com/embed/KcP3UpUf9IE?si=rLzlqyk_ErWgyn-O"
-            title="YouTube video over Jacobus Nienhuys en Deli"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen>
-          </iframe>
-        </div>
-
-        <div class="note">
-          <strong>Bronkritische noot:</strong>
-          de video bevat enkele vermoedelijke transcriptie- en feitelijke fouten. Voor het familieboek
-          gebruiken we de video niet als primaire historische bron, maar als voorbeeld van hedendaagse
-          Indonesische beeldvorming rond Nienhuys, Deli en Medan.
+        <div class="card-grid card-grid--three reaction-grid">
+          <article class="text-card"><p class="card-label">Perspectief 01</p><h3>Held van Medan</h3><p>Sommige reacties noemen Nienhuys onmisbaar voor de ontwikkeling van Medan.</p></article>
+          <article class="text-card"><p class="card-label">Perspectief 02</p><h3>Koloniale uitbuiting</h3><p>Andere reacties benadrukken geweld, arbeid en Nederlandse verantwoordelijkheid.</p></article>
+          <article class="text-card"><p class="card-label">Perspectief 03</p><h3>Vraag naar bronnen</h3><p>Een kijker vraagt expliciet naar wetenschappelijk onderzoek als referentie.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section--tint" id="herengracht" aria-labelledby="herengracht-title">
       <div class="container">
-        <h2>Hoofdlijn van het verhaal</h2>
+        <div class="content-grid content-grid--wide">
+          <div>
+            <p class="section-number">06</p>
+            <p class="kicker">Van koloniale rijkdom naar herinneringsplaats</p>
+            <h2 id="herengracht-title">Herengracht 380–382</h2>
+          </div>
+          <p class="lead-small">Terug in Nederland liet Nienhuys aan de Herengracht 380–382 een opvallend stadspaleis bouwen. Het gebouw, ontworpen door Abraham Salm, werd later bekend door zijn rijke, bijna on-Amsterdamse uitstraling. Tegenwoordig is het pand verbonden met het NIOD. Daarmee kreeg het huis een tweede geschiedenis: van koloniale rijkdom naar archiefplaats van oorlog, vervolging en herinnering.</p>
+        </div>
 
-        <div class="timeline">
-          <article>
-            <span>1863</span>
-            <h3>Aankomst in Deli</h3>
-            <p>
-              Jacobus Nienhuys arriveert aan de oostkust van Sumatra en ziet kansen voor tabaksteelt.
-            </p>
-          </article>
-
-          <article>
-            <span>1869</span>
-            <h3>Deli Maatschappij</h3>
-            <p>
-              De Deli Maatschappij wordt opgericht en groeit uit tot een machtige onderneming in de tabakscultuur.
-            </p>
-          </article>
-
-          <article>
-            <span>1888–1890</span>
-            <h3>Herengracht 380–382</h3>
-            <p>
-              In Amsterdam verrijst het stadspaleis van Nienhuys, ontworpen door Abraham Salm.
-            </p>
-          </article>
-
-          <article>
-            <span>1914–1938</span>
-            <h3>Monument en herinnering</h3>
-            <p>
-              In Medan wordt Nienhuys herdacht als pionier, maar latere bronnen tonen ook de schaduwzijde.
-            </p>
-          </article>
+        <div class="card-grid card-grid--four heritage-grid">
+          <article class="heritage-card"><span aria-hidden="true">I</span><h3>Het ijspaleis</h3><p>De brand en het bevroren bluswater als krachtig beeld.</p></article>
+          <article class="heritage-card"><span aria-hidden="true">II</span><h3>Abraham Salm</h3><p>Architect van het stadspaleis.</p></article>
+          <article class="heritage-card"><span aria-hidden="true">III</span><h3>NIOD</h3><p>Latere bestemming als instituut voor oorlog, Holocaust en genocide.</p></article>
+          <article class="heritage-card"><span aria-hidden="true">IV</span><h3>Koloniaal geld, Amsterdams steen</h3><p>Het huis als materiële erfenis van Deli.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section muted">
+    <section class="section" id="familie" aria-labelledby="familie-title">
       <div class="container">
-        <h2>Drie lagen</h2>
+        <div class="family-header">
+          <div>
+            <p class="section-number">07</p>
+            <p class="kicker">Het persoonlijke spoor</p>
+            <h2 id="familie-title">De familielijn Nienhuys–Noë</h2>
+          </div>
+          <p class="lead-small">Voor deze familiechroniek is ook de latere familielijn belangrijk. De verbinding met de familie Noë maakt het verhaal persoonlijk. Dit deel van de site blijft bewust terughoudend: publieke geschiedenis en privé-familiegeschiedenis worden naast elkaar geplaatst, maar niet volledig vermengd.</p>
+        </div>
 
-        <div class="cards">
-          <article class="card">
-            <h3>Familie</h3>
-            <p>
-              De lijn Nienhuys loopt door in de familie Noë. Dit onderdeel krijgt een persoonlijke,
-              niet-publieke toon.
-            </p>
-          </article>
+        <aside class="private-note">
+          <span aria-hidden="true">Privé</span>
+          <p>Elisabeth Nienhuys trouwde met de vader van Anton Noë. Deze verbinding is familiekennis en kan later worden aangevuld met akten, foto’s en persoonlijke herinneringen.</p>
+        </aside>
 
-          <article class="card">
-            <h3>Geschiedenis</h3>
-            <p>
-              Deli, tabak, Medan, arbeid, contractkoelies, de Deli Maatschappij en de koloniale economie.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>Bronkritiek</h3>
-            <p>
-              Oude kranten zijn waardevol, maar vaak gekleurd door koloniale zelfrechtvaardiging.
-            </p>
-          </article>
+        <div class="gallery-grid" aria-label="Plaats voor toekomstig familiemateriaal">
+          <article class="gallery-placeholder"><span aria-hidden="true">01</span><h3>Familieportret</h3><p>Ruimte voor beeld uit het familiearchief</p></article>
+          <article class="gallery-placeholder"><span aria-hidden="true">02</span><h3>Akte of document</h3><p>Ruimte voor een controleerbare familiebron</p></article>
+          <article class="gallery-placeholder"><span aria-hidden="true">03</span><h3>Herinnering</h3><p>Ruimte voor een persoonlijk verhaal</p></article>
+          <article class="gallery-placeholder"><span aria-hidden="true">04</span><h3>Foto uit privécollectie</h3><p>Ruimte voor later toe te voegen materiaal</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section--sources" id="bronnen" aria-labelledby="bronnen-title">
       <div class="container">
-        <h2>Werknotities</h2>
+        <div class="section-intro section-intro--light">
+          <p class="section-number">08</p>
+          <p class="kicker">Kranten, instellingen en familiekennis</p>
+          <h2 id="bronnen-title">Bronnen en materiaal</h2>
+          <p>De bronnen hieronder laten niet alleen zien wat er gebeurde, maar ook hoe Nienhuys en Deli door de tijd heen zijn voorgesteld.</p>
+        </div>
 
-        <button class="accordion-button" type="button" aria-expanded="false">
-          Toon bronkritische aandachtspunten
-        </button>
-
-        <div class="accordion-panel">
-          <ul>
-            <li>Verwar herdenkingsartikelen niet met neutrale geschiedschrijving.</li>
-            <li>Gebruik de term “koelie” alleen historisch-kritisch en bij voorkeur met uitleg.</li>
-            <li>Claims over mishandeling of verdrijving moeten als claim worden gemarkeerd tenzij er primaire bronnen zijn.</li>
-            <li>Herengracht correct aanduiden als Herengracht 380–382.</li>
-            <li>De YouTube-video gebruiken als hedendaagse herinneringsbron, niet als primaire bron.</li>
-          </ul>
+        <div class="source-grid">
+          <article class="source-card"><p class="source-card__type">Krantenbron · 1913</p><h3>De Sumatra Post</h3><p>Nienhuys wordt genoemd als “eerste planter” in Deli. Waardevol als venster op koloniale zelfrepresentatie.</p></article>
+          <article class="source-card"><p class="source-card__type">Krantenbron · 1926</p><h3>Algemeen Handelsblad</h3><p>Huldigend interview rond zijn negentigste verjaardag. Belangrijk als heldenportret, niet als neutrale bron.</p></article>
+          <article class="source-card"><p class="source-card__type">Krantenbron · 1938</p><h3>De Sumatra Post</h3><p>Jubileumnummer bij 75 jaar Deli. Toont verering van Nienhuys, maar bevat ook verwijzingen naar conflict en morele crisis.</p></article>
+          <article class="source-card"><p class="source-card__type">Krantenbron · 1938</p><h3>De Gooi- en Eemlander</h3><p>Bevat het stokslagenverhaal. Bruikbaar als voorbeeld van hoe eigenrichting later werd verteld en verzacht.</p></article>
+          <article class="source-card"><p class="source-card__type">Instituut</p><h3>NIOD</h3><p>Belangrijke bron voor Herengracht 380–382, de koloniale context en de latere betekenis van het gebouw.</p></article>
+          <article class="source-card"><p class="source-card__type">Digitaal archief</p><h3>Delpher</h3><p>Digitale krantenbron voor publieke beeldvorming rond Nienhuys, Deli, Medan en de Deli Maatschappij.</p></article>
+          <article class="source-card source-card--family"><p class="source-card__type">Privécollectie</p><h3>Familiebron</h3><p>De verbinding Nienhuys–Noë is bevestigd vanuit directe familiekennis en kan later met akten worden aangevuld.</p></article>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>
-        Privé-familieproject — Anton Noë.
-        Niet bedoeld als afgeronde academische publicatie.
-      </p>
+    <div class="container footer-inner">
+      <p class="footer-title">Het huis van ijs en tabak</p>
+      <p>Privé-familieproject van Anton Noë. In ontwikkeling. Niet bedoeld als afgeronde academische publicatie.</p>
+      <a href="#begin">Terug naar boven <span aria-hidden="true">↑</span></a>
     </div>
   </footer>
 
