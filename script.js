@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const fallbackPairs = [
     [document.querySelector(".cover-image"), document.querySelector(".cover-fallback")],
     [document.querySelector(".map-image"), document.querySelector(".map-fallback")],
+    [document.querySelector(".fountain-image"), document.querySelector(".fountain-fallback")],
   ];
 
   fallbackPairs.forEach(([image, fallback]) => {
