@@ -1,13 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const cover = document.querySelector(".cover-image");
-  const fallback = document.querySelector(".cover-fallback");
+  const fallbackPairs = [
+    [document.querySelector(".cover-image"), document.querySelector(".cover-fallback")],
+    [document.querySelector(".map-image"), document.querySelector(".map-fallback")],
+  ];
 
-  if (!cover || !fallback) {
-    return;
-  }
+  fallbackPairs.forEach(([image, fallback]) => {
+    if (!image || !fallback) {
+      return;
+    }
 
-  cover.addEventListener("error", () => {
-    cover.hidden = true;
-    fallback.hidden = false;
+    const showFallback = () => {
+      image.hidden = true;
+      fallback.hidden = false;
+    };
+
+    image.addEventListener("error", showFallback);
+
+    if (image.complete && image.naturalWidth === 0) {
+      showFallback();
+    }
   });
 });
